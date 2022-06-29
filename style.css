@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=La+Belle+Aurore&family=Nanum+Myeongjo&family=Oswald:wght@200&family=Playfair+Display&display=swap');
+
+body
+{
+  background-color: #5a464c;
+  background-size: cover; 
+  background-position-y:  30%;
+  height: 100%;
+    margin: 0;
+    border:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bourbon {
+  display: flex;
+  justify-content: right;
+ width: 95%;
+
+
+}
+
+.bourbon img {
+	 width: 60%;
+
+
+}
+
+.border {
+	display: flex;
+  justify-content: center;
+ width: 100%;
+bottom:10%;
+right: 40%;
+ filter: invert(100%) sepia(4%) saturate(372%) 
+ hue-rotate(224deg) brightness(117%) contrast(100%);
+
+}
+
+.card {
+	 position: relative;
+	 
+	 width: 500px;
+	 height: 725px;
+	 border: 10px solid transparent;
+	 margin: 0px auto 0 auto;
+	 background-color: #ECBA9E;
+background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+h2 {
+  font-family:'Nanum Myeongjo', serif ;
+  font-weight: 600;
+  font-size: 3em;
+  color:white;
+ text-align: center;
+ bottom: 100%;
+}
+
+.front1 {
+  top: auto;
+  position:  25%;
+}
+
+.front2{ 
+  bottom: 0%;
+  right: 2em;
+}
+ .card .text-container {
+	 width: 80%;
+	 height: 80%;
+	 margin: auto;
+}
+ .strikethrough {
+	 text-decoration: line-through;
+}
+ .card .text-container #head {
+	 font-family: 'Nanum Myeongjo', serif;
+	 font-size: 1.5em;
+	 margin: 60px auto 60px auto;
+}
+ .card p {
+	 font-size: 1.1em;
+	 line-height: 1.4;
+	 font-family: 'Nanum Myeongjo', serif;
+   font-weight: 400;
+	 color: #331717;
+	 top: 20%;
+	 margin: 30px auto 0px auto;
+}
+ .card .front {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 backface-visibility: hidden;
+	 background-color:#ECBA9E;
+   background-repeat: no-repeat;
+background-position: center;
+background-size: 150%;
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+}
+ .card:hover .front {
+	 transform: perspective(800px) rotateY(-170deg);
+   background-image: url('/images/IMG_8029.JPG');
+}
+ .card:hover .back {
+	 transform: perspective(800px) rotateY(-170deg);
+	 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	 background-position: 55% 55%;
+	 background-size: 200%;
+   background-image: url('/images/IMG_8029.JPG');
+}
+ .card .back {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border: 10px solid white;
+	 margin: -10px 0px 0px -10px;
+	 backface-visibility: visible;
+	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+	 background-color: #ecba9e;
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ending {
+  text-align: right;
+  left: 0%;
+}
+.imgset
+{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -215px;
+}
+.imgset img
+{
+    border-radius: 5px;
+}
+
+#text {
+  font-family: 'Cutive Mono', monospace;
+    font-weight: 600;
+  font-size: 3em;
+  color:white;
+ text-align: center;
+ bottom: 100%;
+}
